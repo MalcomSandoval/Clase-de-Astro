@@ -7,10 +7,6 @@ Optimizado para velocidad, rendimiento y estilo limpio — sin JavaScript en el 
 
 ## 🌐 Demo
 Explora una demostración real: **[nexodev.vercel.app](https://nexodev.vercel.app)** *(o el dominio que uses)*
-
-![Vista previa de la sección “Sobre mí” — NexoDev Portfolio](assets/preview-about.png)
-![Vista previa de proyectos — NexoDev Portfolio](assets/preview-projects.png)
-
 ---
 
 ## ✨ Características principales
