@@ -1,29 +1,21 @@
 ---
 import '../styles/global.scss';
 
-// Base domain URL without trailing slash
+// URL del dominio base sin barra diagonal
 const domainBaseURL = 'https://devidev.io';
 const ogImageUrl    = 'https://devidev.io/img/meta.png';
 
-// Website publisher & region
+// Publicador y región del sitio web
 const authorPublisher   = 'Dejan Vi.';
 const geoRegion         = 'DE-BY';
 
-// SEO title, description and keywords
+// Título, descripción y palabras clave SEO
 const seoTitle          = 'Malcom Sandoval | Full Stack Developer';
 const seoDescription    = 'Apasionado por el desarrollo web y la creación de experiencias digitales limpias, eficientes y escalables. Domino Angular, TypeScript y Supabase para construir interfaces intuitivas y fluidas. Y sí… hasta mi nombre lleva “dev”.';
 const seoKeywords       = 'Full Stack Developer, Malcom Sandoval, Galapa, Atlántico, Colombia, Papersend, Qivi, TECHPOINT, Angular, Typescript, Supabase';
 
-// Twitter card data
-const twitter = {
-    title:          'Malcom Sandoval',
-    description:    seoDescription,
-    image:          ogImageUrl,
-    site:           '@malocom_sandoval',
-    creator:        '@malcom_sandoval'
-};
 
-// Open graph data
+// Abrir datos del gráfico
 const openGraph = {
     title:          'malcom',
     description:    seoDescription,
@@ -34,7 +26,7 @@ const openGraph = {
     siteName:       'Malcom Sandoval'
 };
 
-// Dublin core
+// Núcleo de Dublín
 const dublinCore = {
     title:          'Malcom Sandoval',
     creator:        authorPublisher,
@@ -53,25 +45,25 @@ const dublinCore = {
 
     <head>
 
-        <!-- Crawler & Robots -->
+        <!-- Rastreadores y robots -->
         <meta name="robots" content="index, follow, noodp, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="revisit-after" content="7 days" />
         <meta name="revisit" content="after 7 days" />
 
-        <!-- Start: Meta-Tags -->
+        <!-- Inicio: Metaetiquetas -->
         <meta charset="UTF-8" />
         <meta http-equiv="content-type"         content="text/html; charset=UTF-8">
         <meta http-equiv="Pragma"               content="cache" />
         <meta http-equiv="X-UA-Compatible"      content="IE=edge">
         <meta name="viewport"                   content="width=device-width, initial-scale=1">
-        <!-- End: Meta-Tags -->
+        <!-- Fin: Metaetiquetas -->
 
-        <!-- Start: DNS prefetch and preconnect -->
+        <!-- Inicio: DNS prefetch and preconnect -->
         <!-- <link rel="preload" as="image" href="/img/logo.svg" /> -->
         <link rel="preconnect" href="https://brain.papersend.io" />
-        <!-- End: DNS prefetch and preconnect -->
+        <!-- Fin: DNS prefetch and preconnect -->
 
-        <!-- Start: Theming and Favicons -->
+        <!-- Inicio: Temas y Favicons -->
         <link rel="icon" type="image/svg+xml" crossorigin="anonymous" href="/img/logo.svg" />
         <!-- <link rel="alternate icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
         <link rel="alternate icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -99,15 +91,6 @@ const dublinCore = {
         <meta property="og:locale"              content={openGraph.locale}>
         <meta property="og:site_name"           content={openGraph.siteName}>
         <!-- End: Facebook open graph -->
-
-        <!-- Start: Twitter card -->
-        <meta name="twitter:card"               content="summary_large_image">
-        <meta name="twitter:title"              content={twitter.title}>
-        <meta name="twitter:description"        content={twitter.description}>
-        <meta name="twitter:image"              content={twitter.image}>
-        <meta name="twitter:site"               content={twitter.site}>
-        <meta name="twitter:creator"            content={twitter.creator}>
-        <!-- End: Twitter card -->
 
         <!-- Start: Dublin Core (DC) -->
         <meta name="DC.Title"                   content={dublinCore.title}>

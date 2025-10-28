@@ -11,10 +11,10 @@ import ContentProjects from '../components/ContentProjects.astro';
 
 <Layout>
 
-    <!-- Start: Main Wrapper -->
+    <!-- Inicio: Envoltorio principal -->
     <main class="flex flex-col md:flex-row w-full max-w-full md:max-w-7xl border border-gray-600 rounded-2xl overflow-hidden shadow-2xl relative bg-black mb-12 md:mb-4">
 
-        <!-- Start: Left / upper card -->
+        <!-- Inicio: Tarjeta izquierda / superior -->
         <div class="p-8 md:p-6 flex flex-col justify-between w-full md:w-2/5 border-b md:border-b-0 md:border-r border-gray-600">
 
             <Profile />
@@ -22,15 +22,15 @@ import ContentProjects from '../components/ContentProjects.astro';
             <Contact />
 
         </div>
-        <!-- End: Left / upper card -->
+        <!-- Final: Tarjeta izquierda/superior -->
 
-        <!-- Start: Right / lower card (yes 4/5 instead of 3/5) -->
+        <!-- Inicio: Tarjeta derecha / inferior (sí 4/5 en lugar de 3/5) -->
         <div class="w-full md:w-4/5 p-0">
 
-            <!-- Start: Inner wrapper -->
+            <!-- Inicio: Contenedor interno -->
             <div class="min-h-full h-[90vh] flex flex-col overflow-y-scroll">
 
-                <!-- Use hidden radio buttons to control the tabs -->
+                <!-- Utilice botones de radio ocultos para controlar las pestañas -->
                 <div class="tab-controls">
 
                     <input
@@ -48,7 +48,7 @@ import ContentProjects from '../components/ContentProjects.astro';
                         class="tab-radio"
                     />
 
-                    <!-- Start: Tab bar -->
+                    <!-- Inicio: Barra de pestañas -->
                     <div class="flex bg-black border-b border-gray-600 sticky top-0 z-10">
 
                         <ContentLink
@@ -62,60 +62,60 @@ import ContentProjects from '../components/ContentProjects.astro';
                         />
 
                     </div>
-                    <!-- End: Tab bar -->
+                    <!-- Fin: barra de pestañas -->
 
-                    <!-- Start: Tab content -->
+                    <!-- Inicio: Contenido de la pestaña -->
                     <div class="p-6 flex-grow overflow-y-auto bg-black">
 
-                        <!-- Start: About content -->
+                        <!-- Inicio: Acerca del contenido -->
                         <div id="content1" class="tab-content">
                             <ContentCode />
                         </div>
-                        <!-- End: About content -->
+                        <!-- Fin: Acerca del contenido -->
 
-                        <!-- Start: Projects content -->
+                        <!-- Inicio: Proyectos contenido -->
                         <div id="content2" class="tab-content">
                             <ContentProjects />
                         </div>
-                        <!-- End: Projects content -->
+                        <!-- Fin: Proyectos contenido -->
 
                     </div>
-                    <!-- End: Tab content -->
+                    <!-- Fin: Proyectos contenido -->
 
                 </div>
 
             </div>
-            <!-- End: Inner wrapper -->
+            <!-- Fin: Contenedor interno -->
 
         </div>
-        <!-- End: Right / lower card -->
+        <!-- Fin: Tarjeta derecha / inferior -->
 
     </main>
-    <!-- End: Main Wrapper -->
+    <!-- Fin: Contenedor principal -->
 
 
 </Layout>
 
 <style is:global>
 
-    /* Hide the radio buttons */
+    /* Ocultar los botones de opción */
     .tab-radio {
         @apply absolute opacity-0 pointer-events-none;
     }
 
-    /* Default state - hide all tab content */
+    /* Estado predeterminado - ocultar todo el contenido de la pestaña */
     .tab-content {
         @apply hidden opacity-0;
         transition: opacity 0.3s ease-in-out;
     }
 
-    /* Default state for tab links */
+    /* Estado predeterminado para los enlaces de pestañas */
     .tab-link {
         @apply border-b-2 border-transparent bg-transparent;
         transition: background-color 0.2s ease-in-out;
     }
 
-    /* When tab1 is checked, show content1 and highlight its tab */
+    /* Cuando tab1 está seleccionado, mostrar content1 y resaltar su pestaña */
     #tab1:checked ~ * #content1 {
         @apply block opacity-100;
     }
@@ -124,7 +124,7 @@ import ContentProjects from '../components/ContentProjects.astro';
         @apply border-b-2 border-b-primary;
     }
 
-    /* When tab2 is checked, show content2 and highlight its tab */
+    /* Cuando tab2 está seleccionado, mostrar content2 y resaltar su pestaña */
     #tab2:checked ~ * #content2 {
         @apply block opacity-100;
     }
