@@ -16,6 +16,7 @@ interface TechStack {
 type ContactType = 'github' | 'linkedIn' | 'email';
 
 const techStack: TechStack = {
+    const stack = {
     devOps: [
         'GitHub',
         'GitLab',
@@ -60,33 +61,25 @@ const techStack: TechStack = {
         'WordPress',
         'Firebase',
         'S3 Storage',
-        'JWT Authentication',
-        'JSON',
-        'CLI Tools'
-    ]
-};
 
-// 👨‍💻 Perfil del desarrollador
+
+// Developer profile
 const me: Developer = {
-    name: 'Malcom Sandoval (NexoDev)',
-    alias: 'NexoDev',
-    title: 'Desarrollador Web Fullstack',
-    bio: 'Apasionado por crear soluciones web modernas, limpias y escalables. Me especializo en Astro, Next.js, Supabase y TailwindCSS. Me gusta experimentar con nuevas tecnologías, optimizar rendimiento y construir experiencias intuitivas para el usuario.',
+    name: 'Malcom Sandoval.',
     skills: [
         ...techStack.devOps,
-        ...techStack.frontend,
         ...techStack.backend,
-        ...techStack.tools
+        ...techStack.frontend
     ],
     interests: [
-        'Desarrollo Fullstack',
-        'Optimización de rendimiento',
-        'Diseño UI/UX moderno',
-        'Automatización de procesos',
-        'Ciberseguridad y privacidad',
-        'Analítica de datos',
-        'Proyectos Open Source'
-    ],
+        'Open Source',
+        'Security',
+        'Privacy',
+        'Performance',
+        'Self-Hosting',
+        'Networking'
+    ]
+};
 
 // Contact function
 const contact = (type: ContactType): string => {
